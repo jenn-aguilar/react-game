@@ -19,7 +19,7 @@ export default function Board({
     if (squares[i] || winner) {
       return;
     }
-    const nextSquares = squares.slice();
+    const nextSquares = squares.slice(); // copy of array
 
     xIsNext ? (nextSquares[i] = "X") : (nextSquares[i] = "O");
 
@@ -37,7 +37,7 @@ export default function Board({
             let index = row * 3 + col;
             let isWinnerSquare = winningIndices.includes(index);
             let bgColor = {
-              backgroundColor: isWinnerSquare ? "#f0f0f0" : "#fff",
+              backgroundColor: isWinnerSquare ? "#ffff00" : "#fff",
             };
             return (
               <Square
