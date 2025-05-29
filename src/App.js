@@ -57,6 +57,7 @@ export default function Game() {
           />
         </div>
         <div className="game-info">
+          <span className="game-info">Moves History</span>
           <ol>{moves}</ol>
         </div>
       </div>
