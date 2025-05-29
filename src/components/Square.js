@@ -8,7 +8,7 @@ const Square = ({ value, onSquareClick, bgColor }) => {
   //   };
 
   return (
-    <button className="square" onClick={onSquareClick} style={bgColor}>
+    <button className="square" onClick={onSquareClick} style={style}>
       {value}
     </button>
   );
