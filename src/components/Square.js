@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Square = ({ value, onSquareClick, bgColor }) => {
+const Square = ({ value, onSquareClick, style }) => {
   //   const [value, setValue] = useState(null);
 
   //   const handleClick = () => {
